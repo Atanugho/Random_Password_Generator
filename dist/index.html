@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-slate-800 grid place-content-center h-screen">
+        <div class="p-12 border-white border-2">
+
+           <div>
+                <h1 class="text-2xl text-white m-6 mt-0 text-center">Password Generator</h1>
+           </div>
+
+            <div  class="bg-white p-1 rounded-sm" id="password_box">
+                
+            </div>
+
+            <div  class="flex">
+                <button  class="bg-purple-500 text-center mt-6
+                text-white text-base rounded-sm py-1 px-5 m-2" id="generate_btn">Generate</button>
+                <button class="bg-purple-500 text-center mt-6
+                text-white text-base rounded-sm px-7 py-1 m-2 "id="copy_btn">Copy To Clipboard</button>
+            </div>
+
+            <div class="flex justify-between mt-7">
+                <label class="text-white text-sm"  for="length">Password length</label>
+                <input class="bg-green-500" type="number" id="length" min="8" max="100" >    
+            </div>
+
+            <div class="flex justify-between mt-1">
+                <label class="text-white text-sm" or="uppercase letter">Include Uppercase Letter</label>
+                <input type="checkbox" class="accent-pink-700" id="uppercase"  checked>
+            </div>
+
+            <div class="flex justify-between mt-1">
+                <label class="text-white text-sm" for="Lowercase letter">Include Lowercase Letter</label>
+                <input type="checkbox" class="accent-pink-700" id="lowercase" checked>
+            </div>
+
+            <div class="flex justify-between mt-1">
+                <label class="text-white text-sm" for="number">Include Numbers </label>
+                <input type="checkbox" class="accent-pink-700"id="number" checked>
+            </div>
+
+            <div class="flex justify-between mt-1">
+                <label class="text-white text-sm" for="symbol">Include Symbols</label>
+                <input type="checkbox" class="accent-pink-700" id="symbol" checked>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
